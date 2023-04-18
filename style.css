@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.light-mode{
+    color: #ffffff;
+}
+body{
+    background-color: #2d2c31;
+   
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    border: 10px groove #000 ;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.wallpaper{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.number{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+}
+.hour{
+    width: 7px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+.minute{
+    width: 5px;
+    height: 130px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+.second{
+    width: 3px;
+    height: 150px;
+    background-color: #e70000;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+.center{
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+}
+.number-1{
+    transform: rotate(30deg);
+}
+.number-2{
+
+    transform: rotate(60deg);
+}
+.number-3{
+    transform: rotate(90deg);
+}
+.number-4{
+    transform: rotate(120deg);
+}
+.number-5{
+    transform: rotate(150deg);
+}
+.number-6{
+    transform: rotate(180deg);
+}
+.number-7{
+    transform: rotate(210deg);
+}
+.number-8{
+    transform: rotate(240deg);
+}
+.number-9{
+    transform: rotate(270deg);
+}
+.number-10{
+    transform: rotate(300deg);
+}
+.number-11{
+
+    transform: rotate(330deg);
+}
+.number-12{
+    transform: rotate(360deg);
+}
+.changeWallpaper{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.changeWallpaper input:nth-child(1){
+    width: 200px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.changeWallpaper .light{
+    position: relative;
+    left: 15px;
+}
+
+.changeWallpaper button{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 115px;
+}
+.changeWallpaper .reset{
+    width: 70px;
+}
+.changeWallpaper label{
+    color: #ffffff;
+}
+@media (max-width: 400px) {
+    .clock{
+        width: 250px;
+        height: 250px;
+        border: 8px groove #000 ;
+    }
+    .hour{
+        height: 70px;
+    }
+    .minute{
+        height: 85px;
+    }
+    .second{
+        height: 90px;
+    }
+}
+@media (max-width: 250px) {
+    .clock{
+        width: 150px;
+        height: 150px;
+        border: 4px groove #000 ;
+    }
+    .hour{
+        width: 3px;
+        height: 30px;
+    }
+    .minute{
+        height: 40px;
+        width: 2px;
+    }
+    .second{
+        height: 45px;
+        width: 1.5px;
+    }
+    .number{
+        font-size: 10px;
+    }
+    .center{
+        width: 5px;
+        height: 5px;
+    }
+}
