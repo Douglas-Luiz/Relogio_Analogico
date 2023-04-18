@@ -22,7 +22,7 @@ main{
     border-radius: 50%;
     background-color: white;
     display: flex;
-    border: 10px groove #000 ;
+    border: 10px solid #000 ;
     box-sizing: border-box;
     position: relative;
     align-items: center;
