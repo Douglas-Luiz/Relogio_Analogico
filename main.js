@@ -105,7 +105,7 @@ function reset(){
     if(date.getHours() >= 18 && date.getHours() < 24 ){
         wallpaper.style.background = ` url('./img/noite.jfif') no-repeat center`
         wallpaper.style.backgroundSize = `cover`;
-        wallpaper.style.opacity = '0.8';
+        wallpaper.style.opacity = '1';
     }
     
 };
